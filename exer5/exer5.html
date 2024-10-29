@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <!--
+    Construir um formulário HTML com as seguintes alternativas em campo checkbox
+Em um programa PHP mostrar os nomes das linguagens escolhidas pelo usuário.
+    -->
+    <form action="teste5.php" method="post">
+        <legend>Quais suas lingaguegsn de programação preferidas?</legend>
+        <input type="checkbox" name="linguagens[]" value="php"> PHP<br>
+        <input type="checkbox" name="linguagens[]" value="javascript"> JavaScript<br>
+        <input type="checkbox" name="linguagens[]" value="csharp"> C#<br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

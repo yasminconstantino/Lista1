@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <!--
+    Tendo como entrada a altura (campo tipo text) e o sexo (campo tipo radio - codificado da seguinte
+forma: 1:feminino 2:masculino) de uma pessoa em um Formulário HTML, construa um programa
+PHP que calcule e imprima o peso ideal, quando um botão de submit for pressionado, utilizando
+as seguintes fórmulas:
+Para homens: (72.7*h) - 58
+Para mulheres: (62.1*h) - 44.7
+    -->
+    <form action="teste.php" method="post">
+        <label for="altura">altura:</label>
+        <input type="text" id="altura" name="altura"><br>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="feminino" name="sexo" value="1">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="masculino" name="sexo" value="2">
+        <label for="masculino">Masculino</label><br>
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>

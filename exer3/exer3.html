@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+<!--
+A biblioteca de uma universidade deseja fazer um algoritmo que leia o nome do usuário, o nome
+do livro que será emprestado e o tipo de usuário (campo tipo radio - codificado da seguinte forma:
+1:professor 2:aluno) em um formulário HTML. Em um programa PHP imprimir um recibo
+conforme com as seguintes informações. O Nome do Usuário, o Nome do Livro, a Data Atual e a
+Data de Devolução. Considerar que o professor tem 14 dias para devolver o livro e o aluno 7 dias.
+-->
+<form action="teste3.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br>
+
+    <label for="livro">Livro:</label>
+    <input type="text" id="livro" name="livro"><br>
+
+    <label for="tipo_usuario">Tipo de Usuário:</label>
+    <input type="radio" id="professor" name="tipo_usuario" value="1">
+    <label for="professor">Professor</label>
+    <input type="radio" id="aluno" name="tipo_usuario" value="2">
+    <label for="aluno">Aluno</label><br>
+
+    <input type="submit" value="Emprestar">
+</form>
+</body>
+</html>

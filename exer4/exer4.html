@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+    <script>
+        function validarNumero() {
+            var numero = document.getElementById("numero").value;
+            if (isNaN(numero)) {
+                alert("Por favor, insira um número válido.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--
+    Em um formulário HTML entrar com um número (campo tipo text). Construir um programa PHP
+para imprimir a soma de todos os números menores que o número lido, se o número lido for
+menor que 0 imprimir número negativo. Construir uma validação em JavaScript para aceitar
+apenas valores numéricos no campo do formulário HTML.
+    -->
+    <form action="teste4.php" method="post" onsubmit="return validarNumero()">
+        <label for="numero">Digite um número:</label>
+        <input type="text" id="numero" name="numero">
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>

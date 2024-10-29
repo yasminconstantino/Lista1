@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <!--
+Entrar com nome (campo tipo text), idade (campo tipo text), cidade para inscrição (campo tipo
+select – codificado da seguinte maneira 1–Pelotas 2–Rio Grande 3-Porto Alegre) de uma pessoa
+em campos de formulário HTML. Construa um programa em PHP que imprima o nome da
+pessoa e a mensagem “Inscrição para Zona Sul” caso a pessoa escolha sua inscrição para as
+cidades de Pelotas e Rio Grande ou “Inscrição para a Capital” caso a pessoa escolha sua inscrição
+para Porto Alegre. Caso a pessoa possua idade inferior a 18 anos deverá ser mostrada apenas a
+mensagem “Inscrição Inválida”.
+-->
+<form action="teste2.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br>
+
+    <label for="idade">Idade:</label>
+    <input type="text" id="idade"   
+name="idade"><br>
+
+    <label for="cidade">Cidade:</label>   
+
+    <select name="cidade" id="cidade">
+        <option value="1">Pelotas</option>
+        <option value="2">Rio Grande</option>
+        <option value="3">Porto Alegre</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Inscrever-se">
+</form>
+</body>
+</html>
